@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+//=============以下为butterknife需要==============
+apply plugin: 'com.jakewharton.butterknife'
+//==============================================
+
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.dotengine.linsir.basedevelop"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    //=============以下为nohttp所需引入的包=============
+    compile 'com.yanzhenjie.nohttp:nohttp:1.1.2'
+    compile 'com.yanzhenjie.nohttp:okhttp:1.1.2'
+    //==============================================
+
+    //=============以下为butterknife需要==============
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //==============================================
+
+    //================以下为Glide需要=================
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    //==============================================
+
+    //================以下为logger需要================
+    compile 'com.orhanobut:logger:1.15'
+    //==============================================
+    //=====以下为BaseRecyclerViewAdapterHelper需要====
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.15'
+    //==============================================
+
+    //===============以下为eventbus需要===============
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //==============================================
+
+    //===========以下为transformations需要============
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    // If you want to use the GPU Filters
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    //==============================================
+
+    //==================leakcanary==================
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    //==============================================
+
+    //===============androidbootstrap===============
+    compile 'com.beardedhen:androidbootstrap:2.3.1'
+    //==============================================
+
+    //==================tastytoast==================
+    compile 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+    //==============================================
+
+    //===============material-dialogs===============
+    compile 'com.afollestad.material-dialogs:core:0.9.4.5'
+    //==============================================
+
+}

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BaseDevelop</string>
+
+
+    <string-array name="good">
+        　   <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+
+
+</resources>

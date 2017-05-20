@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:orientation="vertical"
+    tools:context="com.dotengine.linsir.basedevelop.MainActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="常用库的demo"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf"/>
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/nohttp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="nohttp"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        android:layout_marginTop="12dp"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/glide"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="glide"
+        android:layout_marginTop="12dp"
+        app:bootstrapBrand="warning"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/baseRecyclerview_adapter_helper"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="baseRecyclerView-Adapter-Helper"
+        android:layout_marginTop="12dp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/event_bus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="eventbus"
+        android:layout_marginTop="12dp"
+        app:bootstrapBrand="danger"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/glide_transformations"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="glide-transformations"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="true"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/tasty_toast"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TastyToast"
+        android:layout_marginTop="12dp"
+        app:bootstrapBrand="warning"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="true"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/material_dialogs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="material-dialogs"
+        android:layout_marginTop="12dp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="true"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/logger"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="logger"
+        android:layout_marginTop="12dp"
+        app:bootstrapBrand="danger"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="true"
+        />
+
+
+
+</LinearLayout>

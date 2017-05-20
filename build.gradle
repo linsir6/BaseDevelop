@@ -1,0 +1,37 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        //================以下为Glide需要=================
+        mavenCentral()
+        //==============================================
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+
+        //=============以下为butterknife需要==============
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
+        //==============================================
+
+        //================以下为realm需要=================
+        classpath "io.realm:realm-gradle-plugin:3.2.0"
+        //==============================================
+
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
